@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+    <nav class="navbar expand ig">
+        <h1 class="logo">𝐄𝐋𝐈𝐀𝐒 𝐃𝐑𝐔𝐌𝐌𝐈𝐍𝐆</h1>
+        <ul class="nav-links" id="item">
+            <li><a href="./index.html#home">Home</a></li>
+            <li><a href="./index.html#events">Events</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#photos">Photos</a></li>
+            <li class="ctn"><a href="./index.html#contact">contact</a></li>
+        </ul>
+        <img src="./img/menu-btn.jpg" alt="" class="menu-btn">
+     </nav>
+
+
+
+    <section class="bio">
+        <div class="main">
+            <img src="./img/photos/img-3.jpg">
+            <div class="bio-text">
+                <h1>Biography</h1>
+                <p>Hello, my name is Elias Corbett and I am a professional drummer in the Ottawa, Ontario region. Drumming became a time passer and new hobby for me during Covid-19 lockdown times. I developed a passionate playing style for genres such as punk and heavy metal, however am not limited to. I would say from that my top five influences are: My Chemical Romance, Metallica, Korn, Napalm Death, and Queens of the Stone Age.
+                    I have officially played with 3 bands since I started drums in March 2020. First was a band we called Stereo-7 where we played melodic/psychedelic rock, although after one gig, the band didn’t last long.
+                         Klawfield was my first “real” band after  Stereo-7 where we played many more shows, released lots of music, and even hosted a two day music festival called Punkfest (2022). Punkfest was a huge success and we sold out the hosting venue both days, which was at Cafe Dekcuf.
+                         My most recent ongoing project is called Innuendo, where we stick to the heavier side of music focusing on metal, we like to see ourselves in the heavy metal/thrash metal scene. Since our first couple of weeks we have received overwhelming amounts of attention due to our activity. We intend to play many shows, release lots of music, sellout merchandise, and maybe even host of festival of our own.
+                    I intend to move as far as I can with these bands and get as much experience as possible out of it, I see this as a start to a career which I intend to pursue. On top of that, I intend to study music education at Algonquin College in hopes of landing a sort of technical job in the music industry. I believe this will be a good base to build off of and will further help me along my drumming path.</p>
+                        
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menubtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+        navlinks.addEventListener('click',()=>{
+            navlinks.classList.remove('mobile-menu')
+        })
+        
+    </script>
+    
+</body>
+</html>

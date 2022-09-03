@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=n0">
+
+    <title>Elias Drumming</title>
+    <link rel="icon" href="/img/logo-2.png" />
+    <!--====css====-->
+    <link rel="stylesheet" href="./style.css">
+    <!--Bootstrap-->
+    
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+    <script src="main.js"></script>
+    
+
+    <!-- Navebar -->
+    <nav class="navbar expand ig">
+        <h1 class="logo">𝐄𝐋𝐈𝐀𝐒 𝐃𝐑𝐔𝐌𝐌𝐈𝐍𝐆</h1>
+        <ul class="nav-links" id="item">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li class="ctn"><a href="#contact">contact</a></li>
+        </ul>
+        <img src="./img/menu-btn.jpg" alt="" class="menu-btn">
+     </nav>  
+    <header>
+        <section id="home" class="home">
+        <div class="header-content">
+            <h2>Ottawa's Upcoming Drummer</h2>
+            <div class="line"></div>
+            <h1>ELIAS CORBETT</h1>
+            <a href="./tickets.html" class="ctn">Get Tickets</a>
+        </div>
+        </section>
+    </header>
+
+    <!-- Events -->
+    <section id="events" class="events">
+
+
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/klawfield-1.jpg" alt="">
+                <h4>KLAWFIELD BAND</h4>
+                <p>We'll be playing @dominiontavern on the 22nd.Showcasing our new material of KLAWFIELD 2 and all you favourites.BE THERE!</p>
+                <a href="https://www.instagram.com/klawfieldband/" class="ctn">KLAWFIELD</a>
+            </div>
+            <div class="col">
+                <img src="./img/events-1.jpg" alt="">
+                <h4>INNUENDO</h4>
+                <p>We'll be playing @brassmonkeyottawa on the 24th.And tickets are available now! cost is $20.</p>
+                <a href="https://www.instagram.com/____innuendo____/" class="ctn">INNUENDO</a>
+            </div>
+        </div> 
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-content">
+        <h1>BIOGRAPHY</h1>
+        <div class="line"></div>
+        <p>My name is Elias Corbett and I am a professional drummer in the Ottawa, Ontario region. Drumming became a time passer and new hobby for me during Covid-19 lockdown times. I developed a passionate playing style for genres such as punk and heavy metal, however am not limited to. I would say from that my top five influences are: My Chemical Romance, Metallica, Korn, Napalm Death, and Queens of the Stone Age.<br>
+            I have officially played with 3 bands since I started drums in March 2020.</p>
+        <a href="./about.html" class="ctn">Read More</a>
+      </div>  
+    </section>
+
+    <section id="photos" class="photos">
+        <div class="row">
+            <div class="col content-col">
+                <h1>PICTURES</h1>
+                <div class="line"></div>
+                <P>Some of my pictures</P>
+                <a href="./photos.html" class="ctn">See More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./img/photos/img-1.jpg" alt="">
+                    <img src="./img/photos/img-2.jpg" alt="">
+                    <img src="./img/photos/img-3.jpg" alt="">
+                    <img src="./img/photos/img-4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="contact" class="footer-content">
+            <h3>Elias Corbett</h3>
+            <p>Ottawa | Canada | Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCFTDNkVkJLprKnmXLhsPGVbhjgnfNKJJCPcXQFVxdLxHWlDxgfgKzbFqwmmvNzhJMrVrL">elias.corbett@gmail.com</a></p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/eliascorbett1573179942"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCiOuSpTnBIepZsfBrEvt9JA"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/eliasacorbett/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://open.spotify.com/user/d7ob5e38zn5tnscx7gj2g7naa?si=41cc030e984941bc"><i class="fa fa-spotify"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyrights © 2022 Elias Corbett, Developed & Managed By <a href="https://www.instagram.com/urstruly.karthi/">Karty</a></p>
+        </div>
+    </footer>
+
+    
+    <script>
+        const menubtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menubtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+        navlinks.addEventListener('click',()=>{
+            navlinks.classList.remove('mobile-menu')
+        })
+        
+    </script>
+</body>
+</html>
